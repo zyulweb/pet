@@ -1,0 +1,32 @@
+/* 地图容器样式 */
+.map-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ccc;
+}
+/* 地图样式 */
+.map{
+  width: 100%;
+  height: 100%;
+}
+
+/* 回到原点图片样式 */
+.center-png{
+  position: absolute;
+  top:85%;
+  left: 6%;
+  width:55rpx;
+  height:55rpx;
+}
+.pin{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  width:50rpx;
+  height:50rpx;
+}
+

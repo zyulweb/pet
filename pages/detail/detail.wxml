@@ -1,0 +1,35 @@
+<view>
+<!-- 我的地址 -->
+  <view class='row'>
+    <label class='title'>我的地址</label>
+    <view class='info' bindtap='handleAdressClick'>{{address}}</view>
+  </view>
+  <!-- 类型 -->
+  <view class='row'>
+    <label class='title'>类型</label>
+    <view class='info'>
+      <radio-group bindchange="handleTypeChange">
+        <view>{{type=="sell"?"狗狗" : "猫猫"}}</view>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 说明 -->
+  <view class='row'>
+    <label class='title'>说明</label>
+    <view class='info'>
+      {{message}}
+    </view>
+  </view>
+  <!-- 联系方式 -->
+  <view class='row'>
+    <label class='title'>联系方式</label>
+    <view class='info'>
+      {{contact}}
+    </view>
+  </view>
+  <view class='imgView'>
+    <image wx:for="{{fileIDs}}" wx:key="index" src='{{item}}' class='showImg' mode='widthFix'></image>
+  </view>
+</view>
+
+

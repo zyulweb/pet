@@ -1,0 +1,54 @@
+<!-- 我的地址 -->
+<view wx:if="{{success}}">
+  <view class='row'>
+    <label class='title'>我的地址</label>
+    <view class='info' bindtap='handleAdressClick'>{{address}}</view>
+  </view>
+  <!-- 类型 -->
+  <view class='row'>
+    <label class='title'>类型</label>
+    <view class='info'>
+      <radio-group bindchange="handleTypeChange">
+        <label>
+          <radio value="buy" />求购
+          <radio value="sell" />转让
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 说明 -->
+  <view class='row'>
+    <label class='title'>说明</label>
+    <view class='info'>
+      <input class="info-input" 
+      placeholder="填写具体信息" 
+      bindinput='handleMessage'
+      auto-focus/>
+    </view>
+  </view>
+  <!-- 联系方式 -->
+  <view class='row'>
+    <label class='title'>联系方式</label>
+    <view class='info'>
+      <input 
+      class="info-input" 
+      placeholder="填写您的联系方式"
+      bindinput='handleContact'
+      auto-focus/>
+    </view>
+  </view>
+  <view wx:if="{{showUpload}}">
+    <view class='imgContainer'>
+      <image class='uploadImg' mode='widthFix' wx:for="{{images}}" wx:key="{{index}}" src="{{item}}"></image>
+      <image class='upload-button'  
+      bindtap='handleUpload'
+      src='/images/uploadImg.png'></image>
+    </view>
+  </view>
+  <view class='submit-button' bindtap='handleSubmit'>发布信息</view>
+  </view>
+<view wx:if="{{!success}}" class='success'>
+  <view class='congratulation'>
+    <icon type='success' size='20' class='success-icon'/>恭喜您，发布成功</view>
+  <view type="default" class='backHome-btn' > 3秒后自动返回 </view>
+</view>

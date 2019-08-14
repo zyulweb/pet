@@ -1,0 +1,22 @@
+<!-- 地图 -->
+<view class='map-container'>
+  <map 
+  id='map'
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="14" 
+  class='map' 
+  show-location='true'
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  >
+    <cover-view class="center-png" bindtap="controltap"><!--中心定位图标-->
+      <cover-image src="/images/center.png" />
+    </cover-view>
+    <!-- 回到原位小图标 -->
+    <cover-view class="pin">
+      <cover-image src="/images/pin.png" />
+    </cover-view>
+  </map>
+</view>
+

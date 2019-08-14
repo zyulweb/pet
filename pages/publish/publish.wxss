@@ -1,0 +1,71 @@
+/* 设置整个页面背景为浅灰色 */
+page{
+  background: #eee;
+}
+.row{
+  line-height: 90rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 28rpx;
+  color:#777;
+  background: #fff;
+}
+.info{
+  margin-left: 200rpx;
+}
+.upload-button{
+  width: 200rpx;
+  height:200rpx;
+}
+.submit-button{
+  margin:25rpx 25rpx 0 25rpx;
+  background: #ff9700;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  color:#fff;
+}
+.title{
+  width: 180rpx;
+  float: left;
+  padding-left: 20rpx;
+ 
+}
+.info-input{
+  height: 90rpx;
+}
+.uploadImg{
+  width: 300rpx;
+  padding-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.imgContainer{
+  width: 620rpx;
+  margin: 10rpx auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.success{
+  background: #fff;
+  padding-bottom: 40rpx;
+}
+.congratulation{
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 35rpx;
+}
+.success-icon{
+  position: relative;
+  top: 14rpx;
+  margin-right: 40rpx;
+}
+.backHome-btn{
+  margin: 0 25rpx;
+  background: #00d30c;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  color:#fff;
+}

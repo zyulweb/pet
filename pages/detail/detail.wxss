@@ -1,0 +1,38 @@
+/* pages/publish/publish.wxss */
+/* 设置整个页面背景为浅灰色 */
+page{
+  background: #eee;
+}
+.row{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 28rpx;
+  color:#777;
+  overflow: hidden;
+  background: #fff;
+}
+.info{
+  margin-left: 200rpx;
+  line-height: 60rpx;
+}
+.title{
+  width: 180rpx;
+  float: left;
+  padding-left: 20rpx;
+  line-height: 60rpx;
+ 
+}
+.info-input{
+  height: 90rpx;
+}
+.imgView{
+  width: 620rpx;
+  margin: 10rpx auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.showImg{
+  width: 300rpx;
+  padding: 5rpx;
+}
